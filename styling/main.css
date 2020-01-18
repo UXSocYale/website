@@ -9,7 +9,7 @@ html { font-family: 'Inter', sans-serif; }
      --bg-color: #fdfdfd;
      --bg-dark-color: #121212;
 
-     --text-color: #333236;
+     --text-color: #f2f0f8;
      --text-color-darker: #252427;
      --text-dark-color: #768081;
      --text-light-color: #c9c6d1;
@@ -82,7 +82,11 @@ html { font-family: 'Inter', sans-serif; }
 a{
     
     text-decoration: none;
-    
+    -webkit-transition: all .4s ease;
+-moz-transition: all .4s ease;
+-ms-transition: all .4s ease;
+-o-transition: all .4s ease;
+transition: all .4s ease;
 }
 
 a.btn{
@@ -92,11 +96,7 @@ a.btn{
     color:#fff;
     border-radius:5px;
     padding:.5em .2em;
-    margin:.5em;-webkit-transition: all .4s ease;
--moz-transition: all .4s ease;
--ms-transition: all .4s ease;
--o-transition: all .4s ease;
-transition: all .4s ease;
+    margin:.5em;
 }
 
 a.btn:hover{
@@ -300,6 +300,30 @@ select::-ms-expand {
   display: none;
 }
 
+
+#info{
+    padding:2em;
+}
+
+#info a{
+    border:1px solid var(--text-color);
+    padding:.1em;
+    font-size:.9em;
+}
+
+#info a:hover{
+    text-decoration: none;
+    color: #ec5dc2;
+}
+
+#info h2{
+    font-weight:800;
+}
+
+#info h3{
+    margin-top:2em;
+    font-weight:800;
+}
 
 
 @font-face {
