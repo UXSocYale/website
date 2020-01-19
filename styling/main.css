@@ -321,10 +321,12 @@ select::-ms-expand {
 
 #info h2{
     font-weight:800;
+    margin-bottom:-.5em;
 }
 
 #info h3{
     margin-top:2em;
+    margin-bottom:-.75em;
     font-weight:800;
 }
 
