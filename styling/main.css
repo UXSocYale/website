@@ -305,7 +305,7 @@ select::-ms-expand {
 #info{
     box-sizing: border-box;
     padding:2em;
-    max-width:700px;
+    max-width:750px;
 }
 
 #info a{
@@ -330,6 +330,62 @@ select::-ms-expand {
     font-weight:800;
 }
 
+#event{
+    display:flex;
+    justify-content: center;
+    padding:2em;
+    max-width:750px;
+    margin:1em;
+}
+
+#event .event-container{
+}
+
+#event .event-container img{
+    max-width:100%;
+    
+}
+
+#event .event-container h2{
+    font-family:"GTSectraDisplay";
+    margin:0;
+    font-size:2em;
+}
+
+
+
+#event .event-container p{
+    float:left;
+    max-width:500px;
+    width:65%;
+}
+
+
+#event .event-container .event-details{
+    float:right;
+    width:30%;
+    display:inline-block;
+}
+
+#event:hover a{
+    text-decoration: none;
+    color:#ec5dc2;
+}
+
+#event a{
+    display:block;
+}
+
+
+#event .event-container .event-details em{
+    display: block;
+    margin-bottom:1em;
+    font-family:"Inter Var";
+    text-transform: uppercase;
+    font-style: normal;
+    font-size:.8em;
+    letter-spacing:.2px;
+}
 
 @font-face {
     font-family: 'GTSectraDisplay';
