@@ -106,6 +106,22 @@ a.btn:hover{
     color:#121f20;
     text-decoration: none;
     transform: translateY(-3px);
+    cursor: pointer;
+}
+
+a.subbtn{
+    color:#ccc;
+    text-shadow:0 0 20px #ccc;
+    text-transform: uppercase;
+    letter-spacing:.3px;
+    font-size:.8em;
+    display:inline-block;
+}
+
+a.subbtn:hover{
+    color:#ec5dc2;
+    transform: translateY(-3px);
+    text-decoration: none;
 }
 
 

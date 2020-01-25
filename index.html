@@ -196,6 +196,12 @@ transition: all .4s ease;
             <a class="btn" href="join">Join</a>
             
             <a class="btn" href="https://mailchi.mp/9915e29ff7f0/uxsocyale">Mailing List</a>
+            
+            <br><br>
+            
+            <a class="subbtn" href="#event">
+                ↗&#xFE0E;  Information Session 
+            </a>
         </center>
                 
           </div>
@@ -260,7 +266,19 @@ transition: all .4s ease;
       
       </div>
       
+      <script type="text/javascript">
       
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+      
+      </script>
   
   
   </body>
