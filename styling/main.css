@@ -53,7 +53,6 @@ html { font-family: 'Inter', sans-serif; }
     top: 0;
     left: 0;
     margin: 0;
-    padding:1em;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -67,14 +66,19 @@ html { font-family: 'Inter', sans-serif; }
 .box{
     box-sizing: border-box;
     background: none;
+    width:100%;
+}
+
+.center{position: relative; top: 50%; transform: translateY(-50%);
 }
 
 .box.center{
-    margin:auto;
+    top:50%;
+    margin-top:-25%;
+    position: relative;
     
     justify-content: center;
-    max-width:700px;
-    box-sizing: border-box;
+    
     padding:1em;
 }
 
