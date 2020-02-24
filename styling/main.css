@@ -56,7 +56,7 @@ html { font-family: 'Inter', sans-serif; }
      align-items: center;
 
      box-sizing: border-box;
-     padding: 1em;
+     padding: 2em;
      height:100%;
      width:100%;
  }
@@ -408,6 +408,7 @@ select::-ms-expand {
 #team{
     max-width:950px;
     padding:1em;
+    margin:0 2em;
 }
 
 #team p{
@@ -423,13 +424,13 @@ select::-ms-expand {
 #team .member{
     display: inline-block;
     margin:1em;
-    max-width:410px;
+    max-width:390px;
 }
 
 #team .member .member-photo{
     max-width:240px;
     float:left;
-    padding:0 1em;
+    padding-right:1em;
     box-sizing: border-box;
 }
 
@@ -453,12 +454,12 @@ select::-ms-expand {
 }
 
 .member p{
-    display:inline;
+    margin:0;
 }
 
 .member h2{
     line-height:1em;
-    font-size:2.2em;
+    font-size:2em;
 }
 
 .member h3{
