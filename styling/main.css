@@ -468,7 +468,7 @@ select::-ms-expand {
 
 #team .member{
     display: inline-block;
-    margin:1em .25em;
+    margin:1.5em .5em;
     max-width:360px;
 }
 
@@ -513,7 +513,7 @@ select::-ms-expand {
 .member h3{
     vertical-align: super;
     font-style: normal;
-    font-weight:300;
+    font-weight:400;
     font-size:.8em;
 }
 
