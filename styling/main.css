@@ -32,6 +32,7 @@
 
 *{
     box-sizing: border-box;
+    cursor: none;
 }
 
 
@@ -363,7 +364,7 @@ select::-ms-expand {
 .poster{
     position: absolute;
     max-width:15vw;
-    box-shadow:0 -10px 20px rgba(96, 83, 83, 0.44);
+    box-shadow:0 -10px 20px rgba(28, 25, 25, 0.76);
 }
 
 .poster img{
@@ -385,6 +386,7 @@ select::-ms-expand {
     font-size:6vh;
     max-width:550px;
     line-height:1em;
+    margin-bottom: 0;
 }
 
 #landing  .box-inner{
@@ -533,3 +535,29 @@ select::-ms-expand {
     font-style: normal;
 }
 
+
+
+
+.cursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -50%;
+    left: -50%;
+    margin: -15px 0 0 -15px;
+    border-radius: 100%;
+    background-color: white;
+    backface-visibility: hidden;
+    transition: transform 0.2s ease-out;
+    mix-blend-mode: difference;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+
+.cursor.is-moving {
+}
+
+.cursor.is-hovering {
+    transform: scale(1.3);
+}

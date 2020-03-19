@@ -34,6 +34,9 @@
   </head>
 
   <body style="overflow:hidden;">
+      
+      <div class="cursor"></div>
+      
       <div class="poster">
         <img src="images/poster-antef.png">
       </div>
@@ -101,22 +104,39 @@
       });
         
         
-    </script>
-      
 
-      <script type="text/javascript">
+        var $cursor = $('.cursor');
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        function moveCursor(e) {
+            $cursor.addClass('is-moving');
+            $cursor.css({
+                "top": e.pageY,
+                "left": e.pageX
             });
-          });
-        });
 
-      </script>
+            clearTimeout(timer2);
+
+            var timer2 = setTimeout(function () {
+                $cursor.removeClass('is-moving');
+            }, 300);
+        }
+
+        function enlargeCursor(e) {
+            $cursor.removeClass('is-moving');
+            $cursor.addClass('is-hovering');
+        }
+
+        function unenlargeCursor(e) {
+            $cursor.removeClass('is-hovering');
+        }
+
+        $(window).on('mousemove', moveCursor);
+        $("a").on('mouseenter', enlargeCursor);
+        $("a").on('mouseleave', unenlargeCursor);
+
+
+    </script>
 
   </body>
   
