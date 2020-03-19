@@ -397,7 +397,7 @@ select::-ms-expand {
     min-height:300px;
 }
 
-#landing .links a{
+.links a{
     font-family:"Input Mono";
     text-transform: uppercase;
     margin-right:1em;
@@ -406,7 +406,7 @@ select::-ms-expand {
     display:inline-block;
 }
 
-#landing .links a:hover{
+.links a:hover{
     color:#C31D7E;
     text-decoration: none;
 }
