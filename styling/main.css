@@ -111,17 +111,14 @@
 
 #menu a{
     font-weight:300;
-    border-bottom:1px solid #fff;
     text-transform: uppercase;
     margin:0 .5em;
     padding:0.3em;
 }
 
 #menu a:hover{
-    background:#575E8E;
-    border:#fff;
     text-decoration: none;
-    color:#fff;
+    color:#C31D7E;
 }
 
 a{
@@ -197,6 +194,8 @@ a.subbtn:hover{
     font-weight:100;
     margin:.5em 0;
      display: block;
+     font-family:"Input Mono";
+     text-transform: uppercase;
  }
 
 
@@ -379,6 +378,7 @@ select::-ms-expand {
 
 #landing h1{
     font-family: le-monde-livre-std, serif;
+    text-transform: none;
     font-weight: 700;
     font-style: normal;
     font-size:6vh;
@@ -502,11 +502,16 @@ select::-ms-expand {
     margin-bottom:10vh;
     justify-content: center;
     flex-wrap: wrap;
+    font-weight: 100;
 }
 
+#team h3{
+    text-align: center;
+}
 
 #team p{
     max-width:450px;
+    font-weight: 100;
     text-align: center;
 }
 
@@ -514,18 +519,19 @@ select::-ms-expand {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 850px;
 }
 
 #team .member{
     display: inline-block;
-    margin:1.5em .5em;
+    margin:1.5em 1em;
     max-width:360px;
 }
 
 #team .member .member-photo{
     max-width:180px;
     float:left;
-    padding-right:1em;
+    padding-right:.5em;
     box-sizing: border-box;
 }
 
@@ -556,14 +562,12 @@ select::-ms-expand {
 }
 
 .member h2{
-    line-height:1em;
-    font-size:2em;
+    font-size:1.4em;
 }
 
 .member h3{
-    vertical-align: super;
     font-style: normal;
-    font-weight:400;
+    font-weight: 100;
     font-size:.8em;
 }
 
