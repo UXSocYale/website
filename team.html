@@ -145,16 +145,45 @@
       </div>
         </div>
     </div>
+      
+      
+      
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 
   <script type="text/javascript">
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-    });
-  });
+      
+
+        var $cursor = $('.cursor');
+
+
+        function moveCursor(e) {
+            $cursor.addClass('is-moving');
+            $cursor.css({
+                "top": e.pageY,
+                "left": e.pageX
+            });
+
+            clearTimeout(timer2);
+
+            var timer2 = setTimeout(function () {
+                $cursor.removeClass('is-moving');
+            }, 300);
+        }
+
+        function enlargeCursor(e) {
+            $cursor.removeClass('is-moving');
+            $cursor.addClass('is-hovering');
+        }
+
+        function unenlargeCursor(e) {
+            $cursor.removeClass('is-hovering');
+        }
+
+        $(window).on('mousemove', moveCursor);
+        $("a").on('mouseenter', enlargeCursor);
+        $("a").on('mouseleave', unenlargeCursor);
+
+
   </script>
 
   </body>
