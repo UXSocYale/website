@@ -114,6 +114,7 @@
     text-transform: uppercase;
     margin:0 .5em;
     padding:0.3em;
+    font-family: "Input Mono";
 }
 
 #menu a:hover{
@@ -438,64 +439,6 @@ select::-ms-expand {
     font-weight:800;
 }
 
-#event{
-    display:flex;
-    justify-content: center;
-    box-sizing: border-box;
-    padding:2em;
-    max-width:750px;
-}
-
-#event .event-container{
-}
-
-#event .event-container img{
-    max-width:120%;
-    margin-left:-10%;
-}
-
-#event .event-container h2{
-    font-family:"GTSectraDisplay";
-    margin:0;
-    font-size:2em;
-    line-height:32px;
-}
-
-
-
-#event .event-container p{
-    float:left;
-    max-width:500px;
-    width:65%;
-    font-size:.9em;
-}
-
-
-#event .event-container .event-details{
-    float:right;
-    width:30%;
-    display:inline-block;
-}
-
-#event:hover a{
-    text-decoration: none;
-    color:#ec5dc2;
-}
-
-#event a{
-    display:block;
-}
-
-
-#event .event-container .event-details em{
-    display: block;
-    margin-bottom:1em;
-    font-family:"Inter Var";
-    text-transform: uppercase;
-    font-style: normal;
-    font-size:.8em;
-    letter-spacing:.2px;
-}
 
 #team{
     max-width:1200px;
@@ -505,7 +448,7 @@ select::-ms-expand {
     font-weight: 100;
 }
 
-#team h3{
+#team h1, #team h2, #team h3{
     text-align: center;
 }
 
@@ -516,16 +459,16 @@ select::-ms-expand {
 }
 
 #team .member-container{
+    margin:auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     max-width: 850px;
 }
 
 #team .member{
     display: inline-block;
     margin:1.5em 1em;
-    max-width:360px;
+    width:360px;
 }
 
 #team .member .member-photo{
@@ -551,8 +494,7 @@ select::-ms-expand {
 
 .member h2, .member h3{
     margin:0;
-    display: inline;
-    border:0;
+    text-align: right !important;
 }
 
 .member p{
@@ -562,13 +504,17 @@ select::-ms-expand {
 }
 
 .member h2{
+    margin-bottom:.5em;
     font-size:1.4em;
 }
 
 .member h3{
     font-style: normal;
-    font-weight: 100;
+    vertical-align: baseline;
+    font-family:"Input Mono";
+    letter-spacing: .02em;
     font-size:.8em;
+    opacity: 0.9;
 }
 
 @font-face {
