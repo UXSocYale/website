@@ -380,6 +380,8 @@ select::-ms-expand {
 #landing .news{
     font-weight:100;
     max-width:550px;
+    opacity:0.75;
+    color: #C31D7E;
 }
 
 
