@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'MGD Virilio';
+    src: url('MGDVirilio-regular.woff2') format('woff2'),
+        url('MGDVirilio-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MGD Virilio';
+    src: url('59171d7af59fc723d2cbced26f05aa43.woff2') format('woff2'),
+        url('59171d7af59fc723d2cbced26f05aa43.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MGD Virilio';
+    src: url('38f393f54c8f8d2f5c567242aa28b10f.woff2') format('woff2'),
+        url('38f393f54c8f8d2f5c567242aa28b10f.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
