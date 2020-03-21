@@ -491,7 +491,6 @@ select::-ms-expand {
 }
 
 #team .member .member-photo {
-    /* max-width: 150px; */
     box-sizing: border-box;
     margin-bottom: .5em;
 }
