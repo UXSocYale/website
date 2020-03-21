@@ -381,7 +381,7 @@ select::-ms-expand {
 
 #landing .news{
     font-weight:100;
-    max-width:550px;
+    max-width: 460px;
     opacity:0.75;
     color: #C31D7E;
 }
@@ -412,52 +412,52 @@ select::-ms-expand {
     min-height:300px;
 }
 
-.links a{
+.links a {
+    display: inline-block;
     font-family:"Input Mono";
     text-transform: uppercase;
-    margin-right:1em;
-    max-width:150px;
+    margin-right: 1em;
+    max-width: 200px;
     vertical-align: top;
-    display:inline-block;
 }
 
-.links a:hover{
+.links a:hover {
     color:#C31D7E;
     text-decoration: none;
 }
 
-#info{
+#info {
     box-sizing: border-box;
-    padding:2em;
-    max-width:750px;
+    padding: 2em;
+    max-width: 750px;
 }
 
-#info a{
-    border:1px solid var(--text-color);
-    padding:.1em;
-    font-size:.9em;
+#info a {
+    border: 1px solid var(--text-color);
+    padding: .1em;
+    font-size: .9em;
 }
 
-#info a:hover{
+#info a:hover {
     text-decoration: none;
     color: #ec5dc2;
 }
 
-#info h2{
-    font-weight:800;
-    margin-bottom:-.5em;
+#info h2 {
+    font-weight: 800;
+    margin-bottom: -.5em;
 }
 
-#info h3{
-    margin-top:2em;
-    margin-bottom:-.75em;
-    font-weight:800;
+#info h3 {
+    margin-top: 2em;
+    margin-bottom: -.75em;
+    font-weight: 800;
 }
 
 
-#team{
-    max-width:700px;
-    margin-bottom:10vh;
+#team {
+    max-width: 700px;
+    margin-bottom: 10vh;
     justify-content: center;
     flex-wrap: wrap;
     font-weight: 100;
@@ -465,77 +465,78 @@ select::-ms-expand {
     padding-right: 2em;
 }
 
-#team h1, #team h2, #team h3{
+#team h1, #team h2, #team h3 {
     text-align: center;
 }
 
-#team p{
+#team p {
     max-width:450px;
     font-weight: 100;
     text-align: center;
 }
 
-#team .member-container{
-    margin:auto;justify-content: space-around;
+#team .member-container {
+    margin: auto;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
 }
 
-#team .member{
+#team .member {
     display: inline-block;
-    margin:1.5em 1em;
-    width:280px;
+    margin: 1.5em 1em;
+    width: 280px;
     text-align: center;
 }
 
-#team .member .member-photo{
-    max-width:150px;
+#team .member .member-photo {
+    /* max-width: 150px; */
     box-sizing: border-box;
-    margin-bottom:.5em;
+    margin-bottom: .5em;
 }
 
-.member a{
-    padding:.3em;
+.member a {
+    padding: .3em;
     color:#E7A210;
 }
 
-.member a:hover{
-    background:#E7A210;
-    color:#000;
+.member a:hover {
+    background: #E7A210;
+    color: #000;
     text-decoration: none;
 }
 
-.member:hover img{
+.member:hover img {
     filter: grayscale(1);
 }
 
-.member h2, .member h3{
+.member h2, .member h3 {
     text-align: center;
 }
 
-.member p{
-    line-height:1.2em;
-    font-size:.9em;
-    margin:0;
+.member p {
+    line-height: 1.2em;
+    font-size: .9em;
+    margin: 0;
 }
 
-.member h2{
-    margin-bottom:.5em;
-    margin-top:0;
-    font-size:1.8em;
+.member h2 {
+    margin-bottom: .5em;
+    margin-top: 0;
+    font-size: 1.8em;
     font-family: 'MGD Virilio';
     text-transform: capitalize;
 }
 
-.member h3{
+.member h3 {
     font-weight: 400;
-    margin-bottom:0.5em;
+    margin-bottom: 0.5em;
     vertical-align: baseline;
-    font-family:"Input Mono";
+    font-family: "Input Mono";
     letter-spacing: .02em;
     color:#E7A210;
-    font-size:.8em;
+    font-size: .8em;
     opacity: 0.85;
 }
 
@@ -563,9 +564,6 @@ select::-ms-expand {
     font-style: italic;
 }
 
-
-
-
 .cursor {
     position: absolute;
     width: 30px;
@@ -581,11 +579,30 @@ select::-ms-expand {
     z-index: 1000;
     pointer-events: none;
 }
-
-
 .cursor.is-moving {
 }
-
 .cursor.is-hovering {
     transform: scale(1.5);
+}
+
+.thumbnail {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+    width: 100%;
+    height: auto;
 }
