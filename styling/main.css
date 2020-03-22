@@ -31,8 +31,8 @@
  }
 
 *{
-    box-sizing: border-box;
     cursor: none;
+    box-sizing: border-box;
 }
 
 
@@ -564,12 +564,11 @@ select::-ms-expand {
 }
 
 .cursor {
-    position: absolute;
+    position: fixed;
     width: 30px;
     height: 30px;
-    top: -50%;
-    left: -50%;
-    margin: -15px 0 0 -15px;
+    margin-top:-15px;
+    margin-left:-15px;
     border-radius: 100%;
     background-color: white;
     backface-visibility: hidden;

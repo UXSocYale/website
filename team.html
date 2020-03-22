@@ -152,15 +152,13 @@
 
   <script type="text/javascript">
       
-
         var $cursor = $('.cursor');
-
 
         function moveCursor(e) {
             $cursor.addClass('is-moving');
             $cursor.css({
-                "top": e.pageY,
-                "left": e.pageX
+                "top": e.clientY,
+                "left": e.clientX
             });
 
             clearTimeout(timer2);
@@ -180,6 +178,7 @@
         }
 
         $(window).on('mousemove', moveCursor);
+      
         $("a").on('mouseenter', enlargeCursor);
         $("a").on('mouseleave', unenlargeCursor);
 
