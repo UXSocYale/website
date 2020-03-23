@@ -121,7 +121,7 @@
 }
 
 #menu a{
-    font-weight:300;
+    font-weight: bold;
     text-transform: uppercase;
     margin:0 .5em;
     padding:0.3em;
@@ -422,7 +422,7 @@ select::-ms-expand {
     font-family:"Input Mono";
     text-transform: uppercase;
     margin-right: 1em;
-    max-width: 200px;
+    max-width: 220px;
     vertical-align: top;
 }
 
@@ -479,6 +479,10 @@ select::-ms-expand {
 
 #team h1, #team h2, #team h3 {
     text-align: center;
+}
+
+u > h2 {
+    font-weight: bold;
 }
 
 #team p {
