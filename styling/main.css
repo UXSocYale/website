@@ -19,16 +19,22 @@
      --ele-light: #e5e4eb;
      --ele-line: #141cd1;
      --ele-highlight: #ec5dc2;
+     
+     --yellow: #E7A210;
+     --magenta: #C31D7E;
+     --blue: #7FABD1;
+     --green: #7B9A65;
+     
 
  }
 
  .dark {
 
-
      background: var(--bg-dark-color);
      color: var(--text-dark-color);
 
  }
+
 
 *{
     box-sizing: border-box;
@@ -464,6 +470,13 @@ select::-ms-expand {
     padding-right: 2em;
 }
 
+#team p.about{
+    font-size:1.4em;
+    line-height:1.5em;
+    max-width:700pc;
+}
+
+
 #team h1, #team h2, #team h3 {
     text-align: center;
 }
@@ -496,13 +509,22 @@ select::-ms-expand {
 
 .member a {
     padding: .3em;
-    color:#E7A210;
+    color: var(--yellow);
+
 }
 
 .member a:hover {
     background: #E7A210;
     color: #000;
     text-decoration: none;
+}
+
+.member img{
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 .member:hover img {
@@ -517,6 +539,7 @@ select::-ms-expand {
     line-height: 1.2em;
     font-size: .9em;
     margin: 0;
+    padding-top:1em;
 }
 
 .member h2 {
@@ -533,7 +556,7 @@ select::-ms-expand {
     vertical-align: baseline;
     font-family: "Input Mono";
     letter-spacing: .02em;
-    color:#E7A210;
+    color: var(--yellow);
     font-size: .8em;
     opacity: 0.85;
 }
