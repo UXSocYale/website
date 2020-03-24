@@ -417,18 +417,42 @@ select::-ms-expand {
     min-height:300px;
 }
 
+
+.links{
+    margin:auto;
+}
+
 .links a {
     display: inline-block;
     font-family:"Input Mono";
     text-transform: uppercase;
     margin-right: 1em;
     max-width: 220px;
+    padding:0;
     vertical-align: top;
 }
 
 .links a:hover {
     color:#C31D7E;
     text-decoration: none;
+    padding-left:1em;
+}
+
+#team .links{
+    width: 100%;
+}
+
+#team .links a{
+    display:block;
+    margin: auto;
+    text-align: left;
+   padding: .3em;
+    width:100%;
+    max-width:500px;
+} 
+
+#team .links a:hover{
+    padding-left:1em;
 }
 
 #info {
@@ -471,9 +495,14 @@ select::-ms-expand {
 }
 
 #team p.about{
-    font-size:1.4em;
     line-height:1.5em;
-    max-width:700pc;
+    max-width:600px;
+    text-align: left;
+}
+
+#team p.about.large{
+    font-size:1.4em;
+    text-align: center;
 }
 
 
