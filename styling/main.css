@@ -211,15 +211,12 @@ a.subbtn:hover{
      text-transform: uppercase;
  }
 
-
-
- p {
+p {
      padding-left:.2em;
 }
 
 
  /* TEXT */
-
  a {
      color: var(--text-color);
  }
@@ -490,8 +487,11 @@ select::-ms-expand {
 
 #team p.about{
     line-height:1.5em;
-    max-width:600px;
     text-align: left;
+}
+#team p.about a:hover {
+    color: #C31D7E;
+    text-decoration: none;
 }
 
 #team p.about.large{
@@ -511,7 +511,6 @@ select::-ms-expand {
 }
 
 #team p {
-    max-width:450px;
     font-weight: 100;
     text-align: center;
 }
@@ -543,7 +542,7 @@ select::-ms-expand {
 }
 
 .member a:hover {
-    background: #E7A210;
+    background: var(--yellow);
     color: #000;
     text-decoration: none;
 }
@@ -583,13 +582,13 @@ select::-ms-expand {
 }
 
 .member h3 {
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 0.5em;
     vertical-align: baseline;
     font-family: "Input Mono";
     letter-spacing: .02em;
-    color: var(--yellow);
-    font-size: .8em;
+    color: var(--magenta);
+    font-size: 1em;
     opacity: 0.85;
 }
 
@@ -674,11 +673,21 @@ select::-ms-expand {
     font-family:"Input Mono";
     text-transform: uppercase;
     height:40px;
+    background:  var(--bg-color);
+    color: #fff;
 }
 
 .newsletter input[type="submit"]:hover{
-    background:  var(--bg-color);
-    color: #fff;
+    color: #C31D7E;
+}
+
+.loader {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  background-color: #101010;
 }
 
 

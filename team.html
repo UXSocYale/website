@@ -29,12 +29,13 @@
     <meta property="twitter:image" content="./images/preview.jpg">
 
     <link rel="stylesheet" href="styling/main.css" type="text/css">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <style type="text/css">
 
       h1{    
           font-family: le-monde-livre-std, serif;
-          font-size:1em;
+          font-size:3em;
+          font-weight: bold;
           margin:0;
           color:#C31D7E;
           line-height:1em;
@@ -42,7 +43,7 @@
           text-transform: uppercase;
           letter-spacing:1px;
       }
-        
+
         
     </style>
   </head>
@@ -60,14 +61,14 @@
     <div class="box" style="margin-top:4em;" id="team">
         <div class="box-inner">
 
-      <h1 style="margin:0;">The Team</h1>
+      <h1 style="margin:0;">Our Team</h1>
            
-        <p class="about large">Founded in Fall 2019,  we're building Yale's design community & practice.
+        <p class="about large">Founded in Fall 2019,  we're building Yale's design community & practice.</p>
             
         <p class="about">
             As a chapter of <a href="http://uxsociety.org">User Experience Society founded in Manila</a>, We're designing Yale's space that works within product, design, engineering, and the arts to build experiences and products to shape Yale, New Haven, and beyond.
             
-        <br><br>As a community, we're an application-based club that meets 1-2x a week within workshops and project building. As an agency, we service everything from brand design, creative strategy, web engineering, and more.<br><br> We hold open workshops, design jams, and other events. We'd love to meet you sometime soon!</p>
+        <br><br>As a community, we're an application-based club that meets 1-2x a week during workshops and project-building. As an agency, we service everything from brand design, creative strategy, web engineering, and more.<br><br> We hold open workshops, design jams, and other events. We'd love to meet you sometime soon!</p>
             
       <hr>
 
@@ -173,9 +174,9 @@
             
             
         <div class="links">
-            <a href="mailto:hello@uxsocietyyale.org">Send us an email</a>
-             <a href="https://www.facebook.com/UXSocietyYale/">Follow us on Facebook</a>
-             <a href="https://www.instagram.com/uxyale/">View our work</a>
+             <a href="https://www.facebook.com/UXSocietyYale/">Find us on Facebook</a>
+             <a href="mailto:hello@uxsocietyyale.org">Talk to us</a>
+             <a href="https://www.instagram.com/uxyale/">Find us on Instagram</a>
         </div>
         
         
@@ -183,6 +184,14 @@
         
         
     </div>
+
+
+    <div class="loader"></div>
+    <script>
+        $(window).on("load", function() {
+        $(".loader").fadeOut("100");
+        });
+    </script>
       
 
   </body>
