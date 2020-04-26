@@ -506,6 +506,12 @@ select::-ms-expand {
     margin-bottom:1em;
 }
 
+#team .block-title {
+    color: #C31D7E;
+    font-weight: bold;
+    font-size: 2em;
+}
+
 #team p {
     font-weight: 100;
     text-align: center;
