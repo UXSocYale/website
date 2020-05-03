@@ -87,7 +87,8 @@
 #logo{
     position: absolute;
     max-width:110px;
-    margin: 1em;
+    margin: .5em;
+    top:5vh;
 }
 
 #logo img{
