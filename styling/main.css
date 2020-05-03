@@ -604,6 +604,45 @@ button:disabled {
     width: 100%;
 } */
 
+
+
+
+/* CURSOR */
+
+
+.cursor, .cursor-outer {
+	mix-blend-mode: exclusion;
+	width: 20px;
+	height: 20px;
+}
+.cursor-outer {
+	position: fixed;
+	top: -10px;
+	left: -10px;
+	z-index: 5000;
+	pointer-events: none!important;
+}
+.cursor {
+	position: absolute;
+	background-color: #f50;
+	border-radius: 50%;
+	-webkit-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+	-moz-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+	-ms-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+	-o-transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+	transition:  transform .2s cubic-bezier(.175,.885,.32,1.275);
+	transform-origin: center center;
+}
+
+.zooming.cursor{
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+}
+
+
 /* LOADER */
 .loader {
 	width: 100%;
@@ -613,6 +652,11 @@ button:disabled {
 	left: 0;
   background-color: #101010;
 }
+
+
+
+
+
 
 
 /* FONT FACE */

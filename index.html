@@ -36,10 +36,8 @@
 
   <body style="overflow:hidden;">
       
-      <div class="bg">
-          <img src="images/bg.png">
-      </div>
       
+<div class="cursor-outer"><div class="cursor"></div></div>
       
      <!-- <div class="poster">
         <img src="images/poster-antef.png">
@@ -125,10 +123,33 @@
       </div>
 
       <div class="loader"></div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
       <script>
           $(window).on("load", function() {
           $(".loader").fadeOut("200");
           });
+
+              $(function() {
+      var prefix = function() {
+        var a = window.getComputedStyle(document.documentElement, ""),
+          b = (Array.prototype.slice.call(a).join("").match(/-(moz|webkit|ms)-/) || "" === a.OLink && ["", "o"])[1];
+        return "WebKit|Moz|MS|O".match(new RegExp("(" + b + ")", "i"))[1], "-" + b + "-"
+      }();
+      $(document).mousemove(function(e) {
+        mouseX = e.pageX + 15;
+        mouseY = e.pageY - $(window).scrollTop() + 15;
+        $('.cursor-outer').attr('style', prefix + 'transform:translate(' + mouseX + 'px,' + mouseY + 'px)');
+      });
+
+      $(document).on('mouseenter', 'a', function() {
+        $('.cursor').addClass('zooming');
+      }).on('mouseleave', 'a', function() {
+        $(".cursor").removeClass("zooming")
+      });
+    })
+          
       </script>
 
       
