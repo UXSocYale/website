@@ -107,12 +107,12 @@
  
     #landing .box-inner{
         position: absolute;
-        top:12.5vh;
+        top:11.5vh;
     }
     
     #landing #newsletter-container{
         position: absolute;
-        bottom:200px;
+        bottom:190px;
     }
     
     #landing #newsletter-container h3{
