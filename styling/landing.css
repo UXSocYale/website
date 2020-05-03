@@ -64,7 +64,7 @@
 
 #landing #newsletter-container{
     position: absolute;
-    bottom:130px;
+    bottom:200px;
     width: 100%;
     
 }
@@ -75,9 +75,27 @@
     text-align: center;
 }
 
+#logo{
+    position: absolute;
+    max-width:110px;
+    margin: 1em;
+}
+
+#logo img{
+    width:100%;
+}
 
 @media only screen and (max-width: 600px) {
  
+    #landing .box-inner{
+        position: absolute;
+        top:10vh;
+    }
+    
+    #landing #newsletter-container{
+        bottom:170px
+    }
+    
     .side{
         bottom:10px !important;
         margin-bottom:1em;

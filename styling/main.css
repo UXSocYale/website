@@ -528,7 +528,7 @@ button:disabled {
 .newsletter{
     text-align: center;
     padding:.5em;
-    height:120px;
+    height:50px;
     width:100%;
     display: flex;
     flex-wrap: wrap;
