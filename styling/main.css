@@ -387,15 +387,13 @@ button:disabled {
 }
 
 #team h2{
-    border-bottom:1px solid #fff;
     padding-bottom:.5em;
     margin-bottom:1em;
 }
 
 #team .block-title {
     color: #C31D7E;
-    font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #team p {
@@ -470,13 +468,12 @@ button:disabled {
 }
 
 .member h3 {
-    font-weight: bold;
-    margin-bottom: 0.5em;
+    padding:1em;
     vertical-align: baseline;
     font-family: "Input Mono";
     letter-spacing: .02em;
-    color: var(--magenta);
-    font-size: 1em;
+    color: var(--white);
+    font-size: .8em;
     opacity: 0.85;
 }
 
