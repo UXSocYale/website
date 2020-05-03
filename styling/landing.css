@@ -18,6 +18,7 @@
     line-height:1em;
     margin: auto;
     text-align: center;
+    pointer-events: none;
 }
 
 
@@ -78,6 +79,8 @@
     
 }
 
+
+
 #landing #newsletter-container h3{
     font-size:.8em;
     margin: 0;
@@ -93,6 +96,10 @@
 
 #logo img{
     width:100%;
+}
+
+.side p{
+    pointer-events: none;
 }
 
 
