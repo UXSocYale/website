@@ -55,6 +55,15 @@
     border-bottom: 1.2px solid #C31D7E;
 }
 
+.links{
+    padding-bottom:1em;
+}
+
+.links a{
+    font-size:.8em;
+    margin:0 1em;
+}
+
 
 .links a:hover {
     color:#C31D7E;
@@ -85,16 +94,22 @@
     width:100%;
 }
 
+
 @media only screen and (max-width: 600px) {
  
     #landing .box-inner{
         position: absolute;
-        top:10vh;
+        top:12.5vh;
     }
     
     #landing #newsletter-container{
-        bottom:170px
+        position: absolute;
+        bottom:200px;
     }
+    
+    #landing #newsletter-container h3{
+        display: none;
+    } 
     
     .side{
         bottom:10px !important;
@@ -105,8 +120,24 @@
           transform: translateX(-50%);
     }
     
+    .side a{
+        display: inline;
+    }
+    
     #landing h1{
         padding:.5em;
+    }
+    
+    .newsletter input[type="email"]{
+        width:170px;
+    }
+    
+    .newsletter input[type="submit"]{
+        width:90px;
+    }
+    
+    .links a{
+        font-size:.8em !important;
     }
     
 }
