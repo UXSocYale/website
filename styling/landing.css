@@ -1,4 +1,6 @@
-
+#landing{
+    height: 100vh;
+}
 
 #landing .news{
     font-weight:100;
