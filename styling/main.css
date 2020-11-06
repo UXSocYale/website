@@ -330,6 +330,11 @@ button:disabled {
     padding:1em;
 }
 
+#team .links a:hover {
+    color: var(--magenta);
+    text-decoration: none;
+}
+
 #info {
     box-sizing: border-box;
     padding: 2em;
